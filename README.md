@@ -42,7 +42,7 @@ Eklentiyi aktifleştirdiğinizde ve gerekli düzenlemeleri yaptığınızda webs
 Eğer dilerseniz filtrelerinizi manuel olarak aşağıdaki resimde belirtildiği gibi uygulayabilirsiniz:
 [![Manuel Filtre Kullanımı](./assets/screenshot-2.png)](https://imageus.dev)
 
-Tüm eklenti seçeneklerine <a href="https://github.com/internative/imageus-wordpress">bu</a> adresten ulaşabilirsiniz.
+Tüm eklenti seçeneklerine <a href="https://imageus.dev/tr/gelistiriciler-icin">bu</a> adresten ulaşabilirsiniz.
 
 ## Aşağıdaki Sürümlerde Test Edildi
 
