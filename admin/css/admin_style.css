@@ -1,0 +1,31 @@
+.compat-attachment-fields span {
+  font-size: 12px;
+}
+.compat-field-imageus-configuration td.field {
+  display: none;
+}
+.compat-field-imageus-configuration span {
+  text-align: left !important;
+  font-weight: 600 !important;
+  text-transform: uppercase;
+  font-size: 12px;
+  color: #666 !important;
+}
+.compat-field-imageus-configuration label {
+  text-align: center !important;
+}
+.compat-field-imageus-configuration .label {
+  width: 100% !important;
+}
+tr.compat-field-imageus-width {
+  display: none;
+}
+tr.compat-field-imageus-height {
+  display: none;
+}
+
+.admin-card {
+  background-color: #fff;
+  padding: 20px;
+  border-radius: 3px;
+}
