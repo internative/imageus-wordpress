@@ -1,9 +1,9 @@
 <?php
 
-register_uninstall_hook(IBUP_BASENAME, 'ibup_uninstall_plugin');
+register_uninstall_hook(imgus_BASENAME, 'imgus_uninstall_plugin');
 
-function ibup_uninstall_plugin() {
-  $prefix = 'ibup_';
+function imgus_uninstall_plugin() {
+  $prefix = 'imgus_';
   $options = array('plugin_redirect', 'imageus_hosts', 'imageus_source', 'imageus_active');
 
   array_map(function($option) {

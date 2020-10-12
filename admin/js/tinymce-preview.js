@@ -1,5 +1,5 @@
 jQuery(document).on("tinymce-editor-init", function(event, editor) {
-  ibup_add_imageus_url();
+  imgus_add_imageus_url();
 
   if (wp.media) {
     wp.media.view.Modal.prototype.on("open", function() {
@@ -12,11 +12,11 @@ jQuery(document).on("tinymce-editor-init", function(event, editor) {
   }
 
   tinymce.activeEditor.on("SetContent", function(e) {
-    ibup_add_imageus_url();
+    imgus_add_imageus_url();
   });
 });
 
-function ibup_add_imageus_url() {
+function imgus_add_imageus_url() {
   var images = jQuery(".mce-container")
     .contents()
     .find("iframe")
@@ -34,7 +34,7 @@ function ibup_add_imageus_url() {
     //   src = "https" + src;
     // }
 
-    var newUrl = ibup_mountimageusUrl(src, {
+    var newUrl = imgus_mountimageusUrl(src, {
       operation: elm.attr("imageus-operation"),
       mode: elm.attr("imageus-mode"),
       width: elm.attr("imageus-width"),

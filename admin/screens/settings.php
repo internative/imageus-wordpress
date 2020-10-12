@@ -31,11 +31,11 @@ function imageus_settings() {
     <h3 style="margin-top: 0">Aktif Et</h3>
       <input
         type="checkbox"
-        id="ibup_imageus_active"
-        name="ibup_imageus_active"
+        id="imgus_imageus_active"
+        name="imgus_imageus_active"
         value="true"
-        <?php echo get_option('ibup_imageus_active') ? 'checked' : '' ?>
-      /> <label for="ibup_imageus_active">Gelişmiş Ayarlar</label>
+        <?php echo get_option('imgus_imageus_active') ? 'checked' : '' ?>
+      /> <label for="imgus_imageus_active">Gelişmiş Ayarlar</label>
 
     </div>
 
@@ -44,10 +44,10 @@ function imageus_settings() {
     <h3>Gelişmiş Ayarlar</h3>
     <p>ImageUs, varsayılan olarak tüm resimlerinizi işleyecektir.<br> Bunun olmasını istemiyorsanız, bu işleminin uygulanmasını istediğiniz resimlerin bulunduğu dizinleri virgül ile ayırarak aşağıdaki alana girebilirsiniz.</p>
       <textarea
-        id="ibup_imageus_hosts"
-        name="ibup_imageus_hosts"
+        id="imgus_imageus_hosts"
+        name="imgus_imageus_hosts"
         rows="4" cols="80"
-      ><?php echo filter_var(get_option('ibup_imageus_hosts'), FILTER_SANITIZE_STRING) ?></textarea> <br /> <br />
+      ><?php echo filter_var(get_option('imgus_imageus_hosts'), FILTER_SANITIZE_STRING) ?></textarea> <br /> <br />
 
     </div>
 

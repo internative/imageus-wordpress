@@ -1,36 +1,43 @@
 <?php
 
-function ibup_is_activated() {
-  return get_option('ibup_imageus_active') == "true";
+function imgus_is_activated() {
+  return get_option('imgus_imageus_active') == "true";
 }
 
 
-function ibup_get_authorised_hosts() {
-  $hosts = htmlspecialchars(get_option('ibup_imageus_hosts'), ENT_QUOTES, 'UTF-8');
+function imgus_get_authorised_hosts() {
+  $hosts = htmlspecialchars(get_option('imgus_imageus_hosts'), ENT_QUOTES, 'UTF-8');
   return array_filter(array_map('trim', explode(',', $hosts)));
 }
 
-function ibup_get_source() {
-  return trim(get_option('ibup_imageus_source'));
+function imgus_get_source() {
+  return trim(get_option('imgus_imageus_source'));
 }
 
-function ibup_apply_imageus_urls($the_content) {
+function replace_protocol($from, $to, $content)
+{
+    $from = '/'.preg_quote($from, '/').'/';
+
+    return preg_replace($from, $to, $content, 1);
+}
+
+function imgus_apply_imageus_urls($the_content) {
   $hosts = join('|', array_map(function($host) {
     return preg_quote($host, '/');
-  }, ibup_get_authorised_hosts()));
+  }, imgus_get_authorised_hosts()));
 
   $the_content = preg_replace_callback('/<img[\s\r\n]+.*?>/is', function($matches) use ($hosts) {
-    return ibup_process_image_fragment($matches[0], $hosts);
+    return imgus_process_image_fragment($matches[0], $hosts);
   }, $the_content);
 
   $the_content = preg_replace_callback("/<[^>]*?\sstyle=['\"][^>]*?background(-image)?:.*?url\(\s*.*?\s*\);?.*?['\"].*?>/ismS", function($matches)  use ($hosts) {
-    return ibup_process_background_fragment($matches[0], $hosts);
+    return imgus_process_background_fragment($matches[0], $hosts);
   }, $the_content);
 
   return $the_content;
 }
 
-function ibup_process_background_fragment($fragment, $hosts) {
+function imgus_process_background_fragment($fragment, $hosts) {
   if (!preg_match("/$hosts/", $fragment)) {
     return $fragment;
   }
@@ -42,13 +49,13 @@ function ibup_process_background_fragment($fragment, $hosts) {
   $protocol = stripos($_SERVER['SERVER_PROTOCOL'],'https') === 0 ? 'https://' : 'http://';
 
 	if (strpos($fragment, 'http:') === false && strpos($fragment, 'https:') === false) {
-		$fragment = str_replace_first("//", $protocol, $fragment);
+		$fragment = replace_protocol("//", $protocol, $fragment);
 	}
 
   return $fragment;
 }
 
-function ibup_process_image_fragment($img, $hosts) {
+function imgus_process_image_fragment($img, $hosts) {
   preg_match('/\bsrc[\s\r\n]*=[\s\r\n]*[\'"]?(.*?)[\'">\s\r\n]/xis', $img, $matches);
   $src = $matches[1];
 
@@ -70,9 +77,3 @@ function ibup_process_image_fragment($img, $hosts) {
   return $img;
 }
 
-function str_replace_first($from, $to, $content)
-{
-    $from = '/'.preg_quote($from, '/').'/';
-
-    return preg_replace($from, $to, $content, 1);
-}

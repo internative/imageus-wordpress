@@ -1,7 +1,7 @@
 <?php
 
-add_filter('attachment_fields_to_edit', 'ibup_add_media_custom_field', 10, 2);
-function ibup_add_media_custom_field($form_fields, $post) {
+add_filter('attachment_fields_to_edit', 'imgus_add_media_custom_field', 10, 2);
+function imgus_add_media_custom_field($form_fields, $post) {
 
   $form_fields['imageus-configuration'] = array(
     'label' => 'imageus Configuration',
@@ -146,8 +146,8 @@ function ibup_add_media_custom_field($form_fields, $post) {
   return $form_fields;
 }
 
-add_filter('attachment_fields_to_save', 'ibup_save_attachment_field', 10, 2);
-function ibup_save_attachment_field($post, $attachment) {
+add_filter('attachment_fields_to_save', 'imgus_save_attachment_field', 10, 2);
+function imgus_save_attachment_field($post, $attachment) {
   if (isset($attachment['imageus-height'])) {
     update_post_meta($post['ID'], 'imageus-height', $attachment['imageus-height']);
   }
@@ -205,8 +205,8 @@ function ibup_save_attachment_field($post, $attachment) {
   return $post;
 }
 
-add_filter('image_send_to_editor', 'ibup_custom_html_template', 1, 8);
-function ibup_custom_html_template($html, $id, $caption, $title, $align, $url, $size, $alt) {
+add_filter('image_send_to_editor', 'imgus_custom_html_template', 1, 8);
+function imgus_custom_html_template($html, $id, $caption, $title, $align, $url, $size, $alt) {
   list($img_src, $width, $height) = image_downsize($id, $size);
   $original_image = wp_get_attachment_image_src($id, 'full');
 
@@ -308,16 +308,16 @@ function ibup_custom_html_template($html, $id, $caption, $title, $align, $url, $
   return $image->saveHTML();
 }
 
-add_filter('tiny_mce_before_init', 'ibup_override_mce_options');
-function ibup_override_mce_options($initArray) {
+add_filter('tiny_mce_before_init', 'imgus_override_mce_options');
+function imgus_override_mce_options($initArray) {
   $opts = '*[*]';
   $initArray['valid_elements'] = $opts;
   $initArray['extended_valid_elements'] = $opts;
   return $initArray;
 }
 
-add_action('media_buttons', 'ibup_reset_attribute_of_images');
-function ibup_reset_attribute_of_images() {
+add_action('media_buttons', 'imgus_reset_attribute_of_images');
+function imgus_reset_attribute_of_images() {
   $query_images_args = array(
     'post_type' => 'attachment',
     'post_mime_type' => 'image',

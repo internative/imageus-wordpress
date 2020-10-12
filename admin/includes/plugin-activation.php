@@ -1,16 +1,15 @@
 <?php
 
-register_activation_hook(IBUP_BASENAME, 'ibup_plugin_activate');
-function ibup_plugin_activate() {
-  add_option('ibup_plugin_redirect', true);
-  update_option('ibup_imageus_hosts', '/wp-content/uploads/');
+register_activation_hook(imgus_BASENAME, 'imgus_plugin_activate');
+function imgus_plugin_activate() {
+  add_option('imgus_plugin_redirect', true);
 }
 
-add_action('admin_init', 'ibup_plugin_redirect');
-function ibup_plugin_redirect()
+add_action('admin_init', 'imgus_plugin_redirect');
+function imgus_plugin_redirect()
 {
-  if (get_option('ibup_plugin_redirect', false)) {
-    delete_option('ibup_plugin_redirect');
+  if (get_option('imgus_plugin_redirect', false)) {
+    delete_option('imgus_plugin_redirect');
     exit(wp_redirect("admin.php?page=imageus"));
   }
 }

@@ -1,7 +1,7 @@
 <?php
 
-add_action('admin_menu', 'ibup_register_menu_page');
-function ibup_register_menu_page() {
+add_action('admin_menu', 'imgus_register_menu_page');
+function imgus_register_menu_page() {
   add_menu_page(
     'Dashboard',
     'imageus',

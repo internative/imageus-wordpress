@@ -1,4 +1,4 @@
-function ibup_mountimageusUrl(
+function imgus_mountimageusUrl(
   src,
   {
     operation,

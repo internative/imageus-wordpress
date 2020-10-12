@@ -1,7 +1,7 @@
 <?php
 
-add_action('admin_init', 'ibup_register_settings');
-function ibup_register_settings() {
-    register_setting('imageus-settings-group', 'ibup_imageus_active');
-    register_setting('imageus-settings-group', 'ibup_imageus_hosts');
+add_action('admin_init', 'imgus_register_settings');
+function imgus_register_settings() {
+    register_setting('imageus-settings-group', 'imgus_imageus_active');
+    register_setting('imageus-settings-group', 'imgus_imageus_hosts');
 }

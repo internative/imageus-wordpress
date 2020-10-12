@@ -9,8 +9,8 @@ License: MIT
 License URI: https://opensource.org/licenses/MIT
 */
 
-define('IBUP_API', 'https://img.imageus.dev');
-define('IBUP_BASENAME', plugin_basename(__FILE__));
+define('imgus_API', 'https://img.imageus.dev');
+define('imgus_BASENAME', plugin_basename(__FILE__));
 
 require plugin_dir_path(__FILE__) . '/includes/url.php';
 require plugin_dir_path(__FILE__) . '/admin/imageus-admin.php';

@@ -1,5 +1,5 @@
 <?php
-function ibup_main_page() {
+function imgus_main_page() {
 ?>
   <div class="wrap">
     <h3>imageus'a hoşgeldin!</h3>
