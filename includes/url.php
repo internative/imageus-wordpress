@@ -14,13 +14,6 @@ function imgus_get_source() {
   return trim(get_option('imgus_imageus_source'));
 }
 
-function replace_protocol($from, $to, $content)
-{
-    $from = '/'.preg_quote($from, '/').'/';
-
-    return preg_replace($from, $to, $content, 1);
-}
-
 function imgus_apply_imageus_urls($the_content) {
   $hosts = join('|', array_map(function($host) {
     return preg_quote($host, '/');
@@ -49,7 +42,8 @@ function imgus_process_background_fragment($fragment, $hosts) {
   $protocol = stripos($_SERVER['SERVER_PROTOCOL'],'https') === 0 ? 'https://' : 'http://';
 
 	if (strpos($fragment, 'http:') === false && strpos($fragment, 'https:') === false) {
-		$fragment = replace_protocol("//", $protocol, $fragment);
+    $from = '/'.preg_quote("//", '/').'/';
+		$fragment = preg_replace($from, $protocol, $fragment, 1);
 	}
 
   return $fragment;
