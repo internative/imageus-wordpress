@@ -46,3 +46,4 @@ You can visit <a href="https://imageus.dev/for-developers">developers</a> page f
 - WordPress 5.2.x
 - WordPress 5.3.x
 - WordPress 5.5.1
+- WordPress 6.1.x
