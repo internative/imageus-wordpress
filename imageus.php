@@ -2,7 +2,7 @@
 /*
 Plugin Name: imageus - Create a powerful & effortless images for your wordpress
 Description: Speed up to your images in minutes with the help of imageus poweful api!
-Version: 2.3
+Version: 2.4
 Author: imageus.dev
 Author URI: https://imageus.dev
 License: MIT

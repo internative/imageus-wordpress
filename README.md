@@ -3,7 +3,7 @@
 ## Imageus
 
 Imageus.dev official wordpress plugin
-[https://imageus.dev/](https://imageus.dev/)
+[https://imageus.dev](https://imageus.dev)
 
 ## Features
 
@@ -25,7 +25,7 @@ Imageus WordPress Plugin can be installed by searching "imageus" tag under "Plug
 or you can follow the steps below for manual installation:
 
 1. Download the plugin via link [Imageus Wordpress](https://wordpress.org/plugins/imageus).
-2. Uplaod zip file to your wordpress plugins page (Plugins => New => Upload)
+2. Upload zip file to your wordpress plugins page (Plugins => New => Upload)
 3. Activate the plugin from plugins page.
 4. Complete the settings in plugin page.
 
@@ -36,7 +36,7 @@ Imageus will be automatically resize and optimize your images after activation.
 ### Manual usage
 
 You can use any other filters like this:
-[![Manual usage](./assets/screenshot-2.png)](https://imageus.dev)
+[![Manual usage](./assets/screenshot-1.png)](https://imageus.dev)
 
 You can visit <a href="https://imageus.dev/for-developers">developers</a> page for additional information
 
