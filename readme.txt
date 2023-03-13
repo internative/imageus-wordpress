@@ -1,33 +1,39 @@
-=== imageus - Resimleriniz İçin Dönüştürme, Sıkıştırma ve CDN ===
+=== imageus - %70 smaller images, better SEO & better performance ===
 Contributors: imageus.dev
 Tags: cdn, webp, image compression, resim işleme
 Requires at least: 4.0
 Requires PHP: 5.3.0
-Tested up to: 5.5.1
-Stable tag: 0.1
+Tested up to: 6.1.1
+Stable tag: 1.3
 License: MIT
 License URI: https://opensource.org/licenses/MIT
 
-= Eklenti Özellikleri =
+= Features =
 
-* Onlarca filtre
-* %65'e kadar daha küçük resimler
-* WebP desteği
-* Hızlı CDN
-* SEO dostu
-* Retina Display desteği
-ve daha birçok özellik
+* 65% smaller images. Imageus is the only service for better images and deliverability.
+* Always fast and uninterrupted - Imageus copies your converted - optimized images on its cloud servers around the world and allows users to access them at maximum speed.
+* Excellent thumbnails - Imageus understands when you need to reduce images too much and shrinks them to gain maximum efficiency without destroying the features of the image it needs to process.
+* Best price guarantee - Imageus is constantly taken one step further by its developers and always guarantees the best price.
+* Focus on the work itself - Imageus prevents developers from wasting time with image conversion on development processes and ensures that time is spent effectively.
+* No worry about code - When you decide to start using imageus, you do not need to move your images, your integration is completed with a single line of code.
 
-== Kurulum ==
+and many more
 
-ImageUs WordPress Eklentisi, Wordpress panelinizde "Eklentiler -> Yeni Ekle" sayfası altından "ImageUs" etiketi aratılarak kurulabilir, ya da manual kurulum için aşağıdaki adımlar takip edilebilir:
 
-1. Eklentiyi yandaki link aracılığıyla indirin [ImageUs Wordpress Eklentisi](https://wordpress.org/plugins/imageus).
-1. İndirdiğiniz ZIP dosyasını Wordpress panelinizin 'Eklentiler > Yeni Ekle > Yükle' sayfasından kurun.
-1. Eklentiyi "Eklentiler" sayfasından aktifleştirin.
-1. Eklenti ayarlarına giderek gerekli adımları tamamlayın.
+== Installation ==
+
+Imageus WordPress Plugin can be installed by searching "imageus" tag under "Plugins -> Add New" page in your Wordpress panel.
+or you can follow the steps below for manual installation:
+
+1. Download the plugin via link [Imageus Wordpress](https://wordpress.org/plugins/imageus).
+2. Uplaod zip file to your wordpress plugins page (Plugins => New => Upload)
+3. Activate the plugin from plugins page.
+4. Complete the settings in plugin page.
+
 
 == 3. Parti Servis Kullanımı ==
-Bu eklenti [ImageUs](https://github.com/internative/imageus-wordpress) servisine bağlıdır.
-Bu eklentiyi kullanmak için tercihen bir [ImageUs](https://imageus.dev/) hesabına sahip olmalısınız ve [Şartlar ve Koşullar](https://imageus.dev/tr/yasal/kullanim-kosullari) hükmünü kabul etmelisiniz.
-Bu eklenti hiçbir 3. parti servise bilgi ya da veri göndermemektedir.
+
+This plugin is relios on [imageus](https://github.com/internative/imageus-wordpress).
+To use this plugin you need to have a [imageus] account.
+We dont send any information to any 3rd party service.
+For additional information you can visit [imageus](https://github.com/internative/imageus-wordpress) official website.

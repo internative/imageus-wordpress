@@ -1,54 +1,48 @@
 [![ImageUs](./assets/logo-color.svg)](https://imageus.dev)
 
-# ImageUs Wordpress Eklentisi
+## Imageus
 
-ImageUs Resmi Wordpress Eklentisi
+Imageus.dev official wordpress plugin
 [https://imageus.dev/](https://imageus.dev/)
 
-# Eklenti Özellikleri
+## Features
 
-Bu eklenti tüm resimlerinizi, ImageUs servisinin sunduğu aşağıdaki özellikler ile otomatik olarak optimize eder:
+Create a powerful & effortless images for your wordpress website.
 
-- Onlarca filtre
-- %65'e kadar daha küçük resimler
-- WebP desteği
-- Hızlı CDN
-- SEO dostu
-- Retina Display desteği
+- 65% smaller images
+- Always fast and uninterrupted
+- Excellent thumbnails
+- Best price guarantee
+- Focus on the work itself
+- No worry about code
+- Optimize your SEO
+- Fastest CDN support
 
-## Manuel Kurulum
 
-ImageUs WordPress Eklentisi, Wordpress panelinizde "Eklentiler -> Yeni Ekle" sayfası altından "ImageUs" etiketi aratılarak kurulabilir, ya da manual kurulum için aşağıdaki adımlar takip edilebilir:
+## Installation
 
-1. Eklentiyi yandaki link aracılığıyla indirin [ImageUs Wordpress Eklentisi](https://wordpress.org/plugins/imageus).
-2. İndirdiğiniz ZIP dosyasını Wordpress panelinizin 'Eklentiler > Yeni Ekle > Yükle' sayfasından kurun.
-3. Eklentiyi "Eklentiler" sayfasından aktifleştirin.
-4. Eklenti ayarlarına giderek gerekli adımları tamamlayın.
+Imageus WordPress Plugin can be installed by searching "imageus" tag under "Plugins -> Add New" page in your Wordpress panel.
+or you can follow the steps below for manual installation:
 
-## Eklentiyi Ayarlama
+1. Download the plugin via link [Imageus Wordpress](https://wordpress.org/plugins/imageus).
+2. Uplaod zip file to your wordpress plugins page (Plugins => New => Upload)
+3. Activate the plugin from plugins page.
+4. Complete the settings in plugin page.
 
-### Eklenti Kullanımı
+## Usage
 
-Eklentiyi kurup aktifleştirdikten sonra Wordpress panelinizde "ImageUs" sayfasında gerekli ayarları ve talimatları görüntüleyebilirsiniz. Eklentinin doğru kullanımı için buradaki talimatları okuyup uygulamayı unutmamalısınız.
+Imageus will be automatically resize and optimize your images after activation.
 
-[![Ayarlar](./assets/screenshot-1.png)](https://imageus.dev)
+### Manual usage
 
-## Kullanım
+You can use any other filters like this:
+[![Manual usage](./assets/screenshot-2.png)](https://imageus.dev)
 
-Eklentiyi aktifleştirdiğinizde ve gerekli düzenlemeleri yaptığınızda websitenizdeki tüm resimler optimize edilmektedir.
+You can visit <a href="https://imageus.dev/for-developers">developers</a> page for additional information
 
-### Özelleştirilebilir Kullanım
+## Tested
 
-Eğer dilerseniz filtrelerinizi manuel olarak aşağıdaki resimde belirtildiği gibi uygulayabilirsiniz:
-[![Manuel Filtre Kullanımı](./assets/screenshot-2.png)](https://imageus.dev)
-
-Tüm eklenti seçeneklerine <a href="https://imageus.dev/tr/gelistiriciler-icin">bu</a> adresten ulaşabilirsiniz.
-
-## Aşağıdaki Sürümlerde Test Edildi
-
-WordPress
-
-- 4.9.x
-- 5.2.x
-- 5.3.x
-- 5.5.1
+- WordPress 4.9.x
+- WordPress 5.2.x
+- WordPress 5.3.x
+- WordPress 5.5.1

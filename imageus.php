@@ -1,8 +1,8 @@
 <?php
 /*
-Plugin Name: imageus - Resimleriniz İçin Dönüştürme, Sıkıştırma ve CDN
-Description: Hızlı ve güvenli resim işleme servisi.
-Version: 0.1
+Plugin Name: imageus - Create a powerful & effortless images for your wordpress
+Description: Speed up to your images in minutes with the help of imageus poweful api!
+Version: 2.3
 Author: imageus.dev
 Author URI: https://imageus.dev
 License: MIT
